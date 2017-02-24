@@ -3,76 +3,76 @@
     <data noupdate="1">
         <!-- account.account.type -->
         <record model="account.account.type" id="data_account_type_receivable">
-          <field name="name">Receivable</field>
+          <field name="name">채권-Receivable</field>
           <field name="type">receivable</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_payable">
-          <field name="name">Payable</field>
+          <field name="name">채무-Payable</field>
           <field name="type">payable</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_liquidity">
-          <field name="name">Bank and Cash</field>
+          <field name="name">현금/예금-Bank and Cash</field>
           <field name="type">liquidity</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_current_assets">
-          <field name="name">Current Assets</field>
+          <field name="name">유동자산-Current Assets</field>
           <field name="type">other</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_non_current_assets">
-          <field name="name">Non-current Assets</field>
+          <field name="name">비유동자산-Non-current Assets</field>
           <field name="type">other</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_prepayments">
-          <field name="name">Prepayments</field>
+          <field name="name">선급금-Prepayments</field>
           <field name="type">other</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_fixed_assets">
-          <field name="name">Fixed Assets</field>
+          <field name="name">고정자산-Fixed Assets</field>
           <field name="type">other</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_current_liabilities">
-          <field name="name">Current Liabilities</field>
+          <field name="name">유동부채-Current Liabilities</field>
           <field name="type">other</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_non_current_liabilities">
-          <field name="name">Non-current Liabilities</field>
+          <field name="name">비유동부채-Non-current Liabilities</field>
           <field name="type">other</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_equity">
-          <field name="name">Equity</field>
+          <field name="name">자본-Equity</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_unaffected_earnings">
-          <field name="name">Current Year Earnings</field>
+          <field name="name">당기순이익-Current Year Earnings</field>
           <field name="include_initial_balance" eval="True"/>
         </record>
         <record model="account.account.type" id="data_account_type_other_income">
-          <field name="name">Other Income</field>
+          <field name="name">잡수입-Other Income</field>
           <field name="type">other</field>
         </record>
         <record model="account.account.type" id="data_account_type_revenue">
-          <field name="name">Income</field>
+          <field name="name">수입-Income</field>
           <field name="type">other</field>
         </record>
         <record model="account.account.type" id="data_account_type_depreciation">
-          <field name="name">Depreciation</field>
+          <field name="name">감가상각-Depreciation</field>
           <field name="type">other</field>
         </record>
         <record model="account.account.type" id="data_account_type_expenses">
-          <field name="name">Expenses</field>
+          <field name="name">비용-Expenses</field>
           <field name="type">other</field>
         </record>
         <record model="account.account.type" id="data_account_type_direct_costs">
-          <field name="name">Cost of Revenue</field>
+          <field name="name">매출원가-Cost of Revenue</field>
           <field name="type">other</field>
         </record>
     </data>

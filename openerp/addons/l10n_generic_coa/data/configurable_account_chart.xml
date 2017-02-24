@@ -4,7 +4,7 @@
 
         <record id="transfer_account_id" model="account.account.template">
             <field name="code">1017</field>
-            <field name="name">Liquidity Transfers</field>
+            <field name="name">유동성 이동(Liquidity Transfers)</field>
             <field name="reconcile" eval='True'/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
         </record>
@@ -26,40 +26,40 @@
         <!-- Balance Sheet -->
         <record id="conf_xfa" model="account.account.template">
             <field name="code">1000</field>
-            <field name="name">Fixed Asset Account</field>
+            <field name="name">고정 자산(Fixed Asset Account)</field>
             <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_stk" model="account.account.template">
             <field name="code">1010</field>
-            <field name="name">Current Assets</field>
+            <field name="name">유동 자산(Current Assets)</field>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_cas" model="account.account.template">
             <field name="code">10111</field>
-            <field name="name">Stock Valuation Account</field>
+            <field name="name">주식 평가 계정(Stock Valuation Account)</field>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
         <record id="conf_cas_interim1" model="account.account.template">
             <field name="code">10112</field>
-            <field name="name">Stock Interim Account (Received)</field>
+            <field name="name">재고 중간 계정-입고(Stock Interim Account-Received)</field>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
         <record id="conf_cas_interim2" model="account.account.template">
             <field name="code">10113</field>
-            <field name="name">Stock Interim Account (Delivered)</field>
+            <field name="name">재고 중간 계정-납품(Stock Interim Account-Delivered)</field>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_a_recv" model="account.account.template">
             <field name="code">1012</field>
-            <field name="name">Account Receivable</field>
+            <field name="name">미수금(Account Receivable)</field>
             <field eval="True" name="reconcile"/>
             <field name="user_type_id" ref="account.data_account_type_receivable"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
@@ -67,42 +67,42 @@
 
         <record id="conf_ova" model="account.account.template">
             <field name="code">1013</field>
-            <field name="name">Tax Paid</field>
+            <field name="name">납부세액(Tax Paid)</field>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_o_income" model="account.account.template">
             <field name="code">1016</field>
-            <field name="name">Opening Income Account</field>
+            <field name="name">영업 소득 계정(Opening Income Account)</field>
             <field name="user_type_id" ref="account.data_account_type_other_income"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_ncas" model="account.account.template">
             <field name="code">1020</field>
-            <field name="name">Non-current assets</field>
+            <field name="name">비 유동 자산(Non-current assets)</field>
             <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_prepayments" model="account.account.template">
             <field name="code">1030</field>
-            <field name="name">Prepayments</field>
+            <field name="name">선불계정(Prepayments)</field>
             <field name="user_type_id" ref="account.data_account_type_prepayments"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
        <record id="current_liabilities" model="account.account.template">
             <field name="code">1110</field>
-            <field name="name">Current Liabilities</field>
+            <field name="name">유동부채(Current Liabilities)</field>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_a_pay" model="account.account.template">
             <field name="code">1111</field>
-            <field name="name">Account Payable</field>
+            <field name="name">지불계정(Account Payable)</field>
             <field eval="True" name="reconcile"/>
             <field name="user_type_id" ref="account.data_account_type_payable"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
@@ -110,21 +110,21 @@
 
         <record id="conf_iva" model="account.account.template">
             <field name="code">1112</field>
-            <field name="name">Tax Received</field>
+            <field name="name">세금공제(Tax Received)</field>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
 
         <record id="conf_a_reserve_and_surplus" model="account.account.template">
             <field name="code">1113</field>
-            <field name="name">Reserve and Profit/Loss Account</field>
+            <field name="name">예금 및 손익 계정(Reserve and Profit/Loss Account)</field>
             <field eval="True" name="reconcile"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
         <record id="cas" model="account.account.template">
             <field name="code">1120</field>
-            <field name="name">Non-current Liabilities</field>
+            <field name="name">비 유동 부채(Non-current Liabilities)</field>
             <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
@@ -134,7 +134,7 @@
 
         <record id="conf_a_sale" model="account.account.template">
             <field name="code">200</field>
-            <field name="name">Product Sales</field>
+            <field name="name">제품 판매(Product Sales)</field>
             <field name="user_type_id" ref="account.data_account_type_revenue"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
             <field name="tag_ids" eval="[(6,0,[ref('account.account_tag_operating')])]"/>
@@ -142,7 +142,7 @@
 
         <record id="conf_cog" model="account.account.template">
             <field name="code">210</field>
-            <field name="name">Cost of Revenue</field>
+            <field name="name">매출 원가(Cost of Revenue)</field>
             <!-- FORWARDPORT UP TO SAAS-10 -->
             <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
@@ -151,14 +151,14 @@
 
         <record id="conf_a_expense" model="account.account.template">
             <field name="code">220</field>
-            <field name="name">Expenses</field>
+            <field name="name">비용(Expenses)</field>
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
             <field name="tag_ids" eval="[(6,0,[ref('account.account_tag_operating')])]"/>
         </record>
 
         <record model="account.account.template" id="exchange_fx_income">
-            <field name="name">Foreign Exchange Gain</field>
+            <field name="name">외환 거래 이익(Foreign Exchange Gain)</field>
             <field name="code">2010</field>
             <field name="user_type_id" ref="account.data_account_type_revenue"/>
             <field name="reconcile" eval="False"/>
@@ -166,7 +166,7 @@
             <field name="tag_ids" eval="[(6,0,[ref('account.account_tag_financing')])]"/>
         </record>
         <record model="account.account.template" id="exchange_fx_expense">
-            <field name="name">Foreign Exchange Loss</field>
+            <field name="name">외환 손실(Foreign Exchange Loss)</field>
             <field name="code">2110</field>
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="reconcile" eval="False"/>
@@ -175,34 +175,34 @@
         </record>
         <record id="a_salary_expense" model="account.account.template">
             <field name="code">2121</field>
-            <field name="name">Salary Expenses</field>
+            <field name="name">급여 비용(Salary Expenses)</field>
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="tag_ids" eval="[(6,0,[ref('account.account_tag_operating')])]"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
         <record id="a_expense_invest" model="account.account.template">
             <field name="code">2122</field>
-            <field name="name">Purchase of Equipments</field>
+            <field name="name">설비 구매(Purchase of Equipments)</field>
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="tag_ids" eval="[(6,0,[ref('account.account_tag_investing')])]"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
         <record id="a_expense_finance" model="account.account.template">
             <field name="code">2123</field>
-            <field name="name">Bank Fees</field>
+            <field name="name">금융 수수료(Bank Fees)</field>
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="tag_ids" eval="[(6,0,[ref('account.account_tag_financing')])]"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
         <record id="a_capital" model="account.account.template">
             <field name="code">3001</field>
-            <field name="name">Capital</field>
+            <field name="name">자본(Capital)</field>
             <field name="user_type_id" ref="account.data_account_type_equity"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
         <record id="a_dividends" model="account.account.template">
             <field name="code">3002</field>
-            <field name="name">Dividends</field>
+            <field name="name">배당금(Dividends)</field>
             <field name="user_type_id" ref="account.data_account_type_equity"/>
             <field name="chart_template_id" ref="configurable_chart_template"/>
         </record>
