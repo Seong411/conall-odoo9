@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-22 13:44+0000\n"
-"PO-Revision-Date: 2017-02-17 15:13+0900\n"
+"PO-Revision-Date: 2017-02-24 14:34+0900\n"
 "Last-Translator: jongwon <jw147520@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/odoo/odoo-9/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -152,7 +152,7 @@ msgstr "(갱신)"
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "<strong>Fiscal Position Remark:</strong>"
-msgstr ""
+msgstr "비고(재정적 위치)"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
@@ -197,7 +197,7 @@ msgstr "예금 계좌"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "필요 조치"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_config_settings_group_sale_delivery_address
@@ -218,12 +218,12 @@ msgstr "진행: %s"
 #. module: sale
 #: selection:sale.config.settings,sale_pricelist_setting:0
 msgid "Advanced pricing based on formula"
-msgstr ""
+msgstr "공식에 기반한 고급 가격 정책"
 
 #. module: sale
 #: selection:sale.config.settings,group_discount_per_so_line:0
 msgid "Allow discounts on sales order lines"
-msgstr ""
+msgstr "판매 주문 내역에 할인 허용"
 
 #. module: sale
 #: selection:sale.config.settings,auto_done_setting:0
@@ -258,7 +258,7 @@ msgstr "판매 주문서에 분석 계정을 지정할 수 있도록 허용."
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_crm_team_sales_to_invoice_amount
 msgid "Amount of sales to invoice"
-msgstr ""
+msgstr "송장 발행 대상인 판매 총합"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_project_id
@@ -299,7 +299,7 @@ msgstr "영업팀별"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_qty_delivered_updateable
 msgid "Can Edit Delivered"
-msgstr ""
+msgstr "배송 완료 편집 가능"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_form
@@ -372,7 +372,7 @@ msgstr "새로운 판매의 첫 단계인 견적서를 생성"
 #. module: sale
 #: selection:product.template,track_service:0
 msgid "Create a task and track hours"
-msgstr ""
+msgstr "작업 생성 및 시간 기록"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_sale_advance_payment_inv
@@ -450,7 +450,7 @@ msgstr "판매 주문이 작성된 날짜."
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_config_settings_default_invoice_policy
 msgid "Default Invoicing"
-msgstr ""
+msgstr "기본 송장 정책"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_res_company_sale_note
@@ -460,7 +460,7 @@ msgstr "기본 조건"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_config_settings_deposit_product_id_setting
 msgid "Default product used for payment advances"
-msgstr ""
+msgstr "선지급(payment advances)에 사용되는 기본 제품"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_company_inherit_form2
@@ -501,12 +501,12 @@ msgstr "현재 판매 주문의 배송 주소"
 #: model:product.product,name:sale.advance_product_0
 #: model:product.template,name:sale.advance_product_0_product_template
 msgid "Deposit"
-msgstr ""
+msgstr "보증금(deposit)"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_config_settings_deposit_product_id_setting
 msgid "Deposit Product"
-msgstr ""
+msgstr "보증 제품(Deposit product)"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_name
@@ -584,7 +584,7 @@ msgstr "계약금 총액"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv_product_id
 msgid "Down Payment Product"
-msgstr ""
+msgstr "계약금 제품(Down Payment Product)"
 
 #. module: sale
 #: selection:sale.advance.payment.inv,advance_payment_method:0
@@ -640,6 +640,10 @@ msgid ""
 "quantity in products sale tab.\n"
 "Advanced pricing based on formula: You can have all the rights on pricelist"
 msgstr ""
+"고정 가격: 모든 가격은 제품 판매가에 의해 결정됩니다.\n"
+"고객에 따른 변동 가격: 최소 수량 구매시 제품 판매 탭에서 가격을 책정할 수 있"
+"습니다.\n"
+"공식에 기반한 고급 가격 정책: 가격표에 대한 모든 권한을 가집니다."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_message_follower_ids
@@ -663,12 +667,15 @@ msgid ""
 "customer. The search tool can also be used to personalise your Invoices "
 "reports and so, match this analysis to your needs."
 msgstr ""
+"이 보고서에서, 고객에게 청구한 총액을 개략적으로 볼 수 있습니다. 검색 도구를 "
+"사용하여 청구 보고서를 적당하게 바꿀 수 있으며, 이를 통해 필요에 따른 분석을 "
+"가능케 합니다."
 
 #. module: sale
 #: selection:sale.order,invoice_status:0
 #: selection:sale.order.line,invoice_status:0
 msgid "Fully Invoiced"
-msgstr ""
+msgstr "청구 완료"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_product_search
@@ -703,7 +710,7 @@ msgstr "선택하면 새로운 메시지를 주목할 필요가 있습니다."
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order_message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "체크하면, 새로운 메시지는 주목이 필요합니다."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_advance_payment_inv_deposit_account_id
@@ -724,7 +731,7 @@ msgstr "송장"
 #: code:addons/sale/sale.py:785
 #, python-format
 msgid "Invoice %s paid"
-msgstr ""
+msgstr "청구서 %s 지불됨"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_partner_invoice_id
@@ -790,12 +797,12 @@ msgstr "시간과 자재에 기반한 송장"
 #. module: sale
 #: selection:sale.config.settings,default_invoice_policy:0
 msgid "Invoice delivered quantities"
-msgstr ""
+msgstr "배송된 수량 청구"
 
 #. module: sale
 #: selection:sale.config.settings,default_invoice_policy:0
 msgid "Invoice ordered quantities"
-msgstr ""
+msgstr "주문된 수량 청구"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_crm_team_invoiced
@@ -810,12 +817,12 @@ msgstr ""
 #. module: sale
 #: selection:sale.advance.payment.inv,advance_payment_method:0
 msgid "Invoiceable lines"
-msgstr ""
+msgstr "청구 가능 내역"
 
 #. module: sale
 #: selection:sale.advance.payment.inv,advance_payment_method:0
 msgid "Invoiceable lines (deduct down payments)"
-msgstr ""
+msgstr "청구 가능 내역 (계약금 제외)"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_qty_invoiced
@@ -825,7 +832,7 @@ msgstr "송장 발행됨"
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_form
 msgid "Invoiced Quantity"
-msgstr ""
+msgstr "청구된 수량"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_crm_team_invoiced
@@ -975,7 +982,7 @@ msgstr "새 견적"
 #. module: sale
 #: selection:sale.config.settings,group_discount_per_so_line:0
 msgid "No discount on sales order lines, global discount only"
-msgstr ""
+msgstr "상세 주문 내역에 대한 할인 불가, 전체 할인만 가능"
 
 #. module: sale
 #: selection:sale.config.settings,group_display_incoterm:0
@@ -985,7 +992,7 @@ msgstr "보고서에 incoterm 표시 안함"
 #. module: sale
 #: selection:sale.config.settings,group_product_variant:0
 msgid "No variants on products"
-msgstr ""
+msgstr "제품 유형 없음"
 
 #. module: sale
 #: model:ir.actions.act_window,help:sale.action_quotations
@@ -1010,12 +1017,12 @@ msgstr "견적이 판매 주문이 되면, 견적 목록에서 판매 주문 목
 #: selection:sale.order,invoice_status:0
 #: selection:sale.order.line,invoice_status:0
 msgid "Nothing to Invoice"
-msgstr ""
+msgstr "청구할 내용 없음"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "단계 수"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order_line_customer_lead
@@ -1037,7 +1044,7 @@ msgstr "읽지 않은 메시지"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_config_settings_module_website_quote
 msgid "Online Quotations"
-msgstr ""
+msgstr "온라인 견적"
 
 #. module: sale
 #. openerp-web
@@ -1059,7 +1066,7 @@ msgstr "주문"
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "Order #"
-msgstr ""
+msgstr "주문 번호"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_date_order
@@ -1150,7 +1157,7 @@ msgstr "지불 기간"
 #: code:addons/sale/sale.py:233
 #, python-format
 msgid "Please define an accounting sale journal for this company."
-msgstr ""
+msgstr "이 회사에 대한 회계 판매 분개장을 정의하십시오."
 
 #. module: sale
 #: code:addons/sale/sale.py:654
@@ -1271,12 +1278,12 @@ msgstr "배송된 양"
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report_qty_invoiced
 msgid "Qty Invoiced"
-msgstr ""
+msgstr "청구된 수량"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_report_qty_to_invoice
 msgid "Qty To Invoice"
-msgstr ""
+msgstr "청구할 수량"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_product_uom_qty
@@ -1294,7 +1301,7 @@ msgstr "견적"
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.report_saleorder_document
 msgid "Quotation #"
-msgstr ""
+msgstr "송장 번호"
 
 #. module: sale
 #: model:ir.actions.report.xml,name:sale.report_sale_order
@@ -1514,7 +1521,7 @@ msgstr "영업팀"
 #: model:ir.ui.menu,name:sale.menu_sale_order_invoice
 #: model:ir.ui.view,arch_db:sale.crm_team_salesteams_view_kanban
 msgid "Sales to Invoice"
-msgstr ""
+msgstr "청구 대상 판매"
 
 #. module: sale
 #: selection:sale.config.settings,module_sale_margin:0
@@ -1541,7 +1548,7 @@ msgstr "판매 주문 검색"
 #: model:ir.model.fields,field_description:sale.field_sale_config_settings_module_website_sale_digital
 msgid ""
 "Sell digital products - provide downloadable content on your customer portal"
-msgstr ""
+msgstr "디지털 제품 판매 - 고객 포털에 다운로드 가능한 컨텐츠 제공"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_form
@@ -1563,7 +1570,7 @@ msgstr "순서"
 #: code:addons/sale/static/src/js/sale.js:19
 #, python-format
 msgid "Set an invoicing target: "
-msgstr ""
+msgstr "청구 대상 설정:"
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_form
@@ -1578,7 +1585,7 @@ msgstr ""
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_form
 msgid "Setup default terms and conditions in your company settings."
-msgstr ""
+msgstr "회사 설정에 기본 용어와 환경을 설정"
 
 #. module: sale
 #: selection:sale.config.settings,group_display_incoterm:0
@@ -1629,6 +1636,8 @@ msgid ""
 "Target of invoice revenue for the current month. This is the amount the "
 "sales team estimates to be able to invoice this month."
 msgstr ""
+"이번 달 송장 매출액 목표. 이것은 판매팀이 이번 달에 청구할 수 있을 것이라고 "
+"예측하는 총액입니다."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_amount_tax
@@ -1641,7 +1650,7 @@ msgstr "세금"
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_advance_payment_inv_deposit_taxes_id
 msgid "Taxes used for deposits"
-msgstr ""
+msgstr "보증금(deposits)에 적용된 세금"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_note
@@ -1655,11 +1664,13 @@ msgid ""
 "The Sale Order %s linked to the Analytic Account must be validated before "
 "registering expenses."
 msgstr ""
+"분석 회계(Analytic account)에 연결된 판매 주문 %s 는 비용을 등록하기 전에 인"
+"증되어야 합니다."
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_advance_payment_inv_amount
 msgid "The amount to be invoiced in advance, taxes excluded."
-msgstr ""
+msgstr "사전 청구 총액, 세금 제외"
 
 #. module: sale
 #: model:ir.model.fields,help:sale.field_sale_order_project_id
@@ -1680,6 +1691,8 @@ msgid ""
 "The product used to invoice a down payment should be of type 'Service'. "
 "Please use another product or update this product."
 msgstr ""
+"계약금을 청구하기 위한 제품은 'Service' 타입이어야 합니다. 다른 제품을 사용하"
+"거나 해당 제품을 업데이트 하십시오."
 
 #. module: sale
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:122
@@ -1689,6 +1702,9 @@ msgid ""
 "to \"Ordered quantities\". Please update your deposit product to be able to "
 "create a deposit invoice."
 msgstr ""
+"계약금을 청구하기 위한 제품은 송장 정책이 \"Ordered quantities\"로 설정되어 "
+"있어야 합니다. 착수 물품(deposit product)을 계약금 청구서를 발행할 수 있도록 "
+"업데이트 하십시오."
 
 #. module: sale
 #: code:addons/sale/wizard/sale_make_invoice_advance.py:64
@@ -1710,7 +1726,7 @@ msgstr ""
 #: code:addons/sale/sale.py:316
 #, python-format
 msgid "There is no invoicable line."
-msgstr ""
+msgstr "송장 발행 가능한 내용(line)이 없습니다."
 
 #. module: sale
 #: model:ir.ui.view,arch_db:sale.view_order_product_search
@@ -1771,7 +1787,7 @@ msgstr ""
 #. module: sale
 #: selection:product.template,track_service:0
 msgid "Timesheets on contract"
-msgstr ""
+msgstr "거래 시간 기록표(timesheets on contract)"
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_order_line_qty_to_invoice
@@ -1863,6 +1879,9 @@ msgid ""
 "                Select measures, filter and group dimensions to get the "
 "perfect report according to your needs."
 msgstr ""
+"판매 파이프라인을 분석하기 위해 pivot과 그래프 뷰를 사용하십시오.\n"
+"               측정, 필터 그리고 그룹 항목을 선택하여 필요에 맞는 완벽한 보고"
+"서를 얻을 수 있습니다."
 
 #. module: sale
 #: model:ir.model.fields,field_description:sale.field_sale_config_settings_group_sale_pricelist
@@ -1912,6 +1931,8 @@ msgid ""
 "You can not remove a sale order line.\n"
 "Discard changes and try setting the quantity to 0."
 msgstr ""
+"판매 주문 내역(sale order line)을 삭제할 수 없습니다.\n"
+"변경 내용을 삭제하고 수량을 0으로 설정하십시오."
 
 # draft quotations = 환어음?
 #. module: sale
