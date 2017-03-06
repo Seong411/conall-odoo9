@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-07 14:40+0000\n"
-"PO-Revision-Date: 2017-02-17 21:50+0900\n"
+"PO-Revision-Date: 2017-03-01 16:38+0900\n"
 "Last-Translator: Martin Trigaux\n"
 "Language-Team: Korean (http://www.transifex.com/odoo/odoo-9/language/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -35,9 +35,9 @@ msgid ""
 "That way the scheduler will only take into account the goods needed until "
 "the second delivery and put the procurement date as the first delivery.  "
 msgstr ""
-"달력에서 당신은 배달되어야할 상품의 날짜를 정의할 수 있습니다. 그렇게하면 스"
-"케줄러는 두 번째 납품까지 필요한 상품만을 고려하여 조달 날짜를 첫 번째 납품"
-"으로 간주합니다."
+"달력에서 당신은 배달되어야할 상품의 날짜를 정의할 수 있습니다. 그렇게하면 "
+"스케줄러는 두 번째 납품까지 필요한 상품만을 고려하여 조달 날짜를 첫 번째 납"
+"품으로 간주합니다."
 
 #. module: stock_calendar
 #: model:ir.model.fields,field_description:stock_calendar.field_stock_warehouse_orderpoint_last_execution_date
@@ -52,7 +52,7 @@ msgstr "휴가 세부사항"
 #. module: stock_calendar
 #: model:ir.model,name:stock_calendar.model_stock_warehouse_orderpoint
 msgid "Minimum Inventory Rule"
-msgstr "최소 재고 규칙"
+msgstr "최소 자재 규칙"
 
 #. module: stock_calendar
 #: model:ir.model.fields,field_description:stock_calendar.field_procurement_order_next_delivery_date
